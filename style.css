@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.container{
+    background-color: #ff8066;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    color: #4a0000;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #010101;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+}
+
+.cta{
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cta::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: #b1dae7;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span{
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg{
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before{
+    width: 100%;
+    background-color: #b1dae7;
+}
+
+.cta:hover svg{
+    transform: translateX(0);
+}
+
+.cta:active{
+    transform: scale(0.95);
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero-text h3{
+    font-size: 2rem;
+}
+
+.hero-text p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.img-content img{
+    transition: all 0.3s ease;
+}
+
+.img-content img:hover{
+    filter: drop-shadow(16px 5px 20px rgb(27,24,24));
+    cursor: pointer;
+}
+
+
+.buttons{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.4rem;
+}
+
+.btn{
+    position: relative;
+    height: 45px;
+    width: 150px;
+    background-color: bisque;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    transition: all 0.5s ease-out;
+}
+
+.btn:hover{
+    font-weight: 600;
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
